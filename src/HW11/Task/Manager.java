@@ -1,9 +1,9 @@
-package HW11.Task1;
+package HW11.Task;
 
 public class Manager extends Employee{
 
-    public Manager(String name, int age){
-        super(name, age);
+    public Manager(String name, int age, int ageInCompany){
+        super(name, age, ageInCompany);
     }
 
     @Override
@@ -11,4 +11,8 @@ public class Manager extends Employee{
         throw new RuntimeException("Can't tell you");
     }
 
+    @Override
+    protected boolean getRightsForBenefits() {
+        return true;
+    }
 }

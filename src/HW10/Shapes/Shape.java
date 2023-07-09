@@ -1,2 +1,11 @@
-package HW10.Shapes;public class Shape {
+package HW10.Shapes;
+
+public abstract class Shape {
+
+    private double perimeter;
+    private double area;
+
+    public abstract double calculatePerimeter();
+    public abstract double calculateArea();
+
 }
